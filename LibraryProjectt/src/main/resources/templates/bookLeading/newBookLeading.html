@@ -1,0 +1,13 @@
+<html layout:decorator="layout">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/bookLeading/createBookLeading" role="form">
+        <div class="form-group">
+            Book<input  name="book.nameBook" />
+             Reader <input name="reader.fullName"/>
+            Date_Took<input name="dateTook"/>
+            Date_Back<input name="dateBack"/>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

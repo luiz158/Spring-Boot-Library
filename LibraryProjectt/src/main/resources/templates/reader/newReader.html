@@ -1,0 +1,11 @@
+<html layout:decorator="layout">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/reader/createReader" role="form">
+        <div class="form-group">
+          Full_Name<input  name="fullName" />
+            Has_Book <input name="hasBook"/>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

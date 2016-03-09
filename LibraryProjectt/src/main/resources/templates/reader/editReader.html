@@ -1,0 +1,13 @@
+<html layout:decorator="layout">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/reader/updateReader" role="form">
+        <div class="form-group">
+            Full_Name<input  name="fullName" />
+            Has_Book <input name="hasBook"/>
+
+        </div>
+        <input type="hidden" id="id" rows="5" class="form-control" name="id" th:value="${reader.id}"/>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>
