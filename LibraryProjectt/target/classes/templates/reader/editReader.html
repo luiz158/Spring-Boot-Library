@@ -2,8 +2,8 @@
 <div layout:fragment="content">
     <form method="post" name="comment_form" id="comment_form" action="/reader/updateReader" role="form">
         <div class="form-group">
-            Full_Name<input  name="fullName" />
-            Has_Book <input name="hasBook"/>
+            Full_Name<input  name="fullName" /> <br/><br/>
+            Has_Book <input name="hasBook"/> <br/><br/>
 
         </div>
         <input type="hidden" id="id" rows="5" class="form-control" name="id" th:value="${reader.id}"/>

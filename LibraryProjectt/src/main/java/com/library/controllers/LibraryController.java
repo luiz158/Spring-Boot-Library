@@ -4,21 +4,19 @@ package com.library.controllers;
 import com.library.domain.entities.Book;
 import com.library.domain.entities.BookLeading;
 import com.library.domain.entities.Reader;
-import com.library.domain.repositories.BookRepository;
 import com.library.domain.services.impl.BookLeadingServiceImpl;
 import com.library.domain.services.impl.BookServiceImpl;
 import com.library.domain.services.impl.ReaderServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+
+
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -62,12 +60,12 @@ public class LibraryController {
     }
 
     @RequestMapping(value = "/book/createBook", method = RequestMethod.POST)
-    public String createBook(@RequestParam("nameBook") String nameBook, @RequestParam("author") String author, @RequestParam("publishingHouse") String publishingHouse) {
+    public String createBook(@Valid @ModelAttribute Book book,  BindingResult bindingResult) {
 
-        Book book = new Book();
-        book.setNameBook(nameBook);
-        book.setAuthor(author);
-        book.setPublishingHouse(publishingHouse);
+        if(bindingResult.hasErrors()){
+
+            return "book/newBook";
+        }
 
         bookService.addBook(book);
 
@@ -113,10 +111,11 @@ public class LibraryController {
     }
 
     @RequestMapping(value = "/reader/createReader", method = RequestMethod.POST)
-    public String createReader(@RequestParam("fullName") String fullName, @RequestParam("hasBook") String hasBook) {
-        Reader reader = new Reader();
-        reader.setFullName(fullName);
-        reader.setHasBook(hasBook);
+    public String createReader(@Valid @ModelAttribute Reader reader, BindingResult bindingResult) {
+
+        if(bindingResult.hasErrors()){
+            return "reader/newReader";
+        }
 
         readerService.addReader(reader);
 
@@ -157,13 +156,23 @@ public class LibraryController {
     }
 
     @RequestMapping(value = "/bookLeading/createBookLeading", method = RequestMethod.POST)
-    public String createBookLeading(@ModelAttribute BookLeading bookLeading) {
+    public String createBookLeading(@Valid @ModelAttribute BookLeading bookLeading,  BindingResult bindingResult) {
 
+        if(bindingResult.hasErrors()){
+
+            return "bookLeading/newBookLeading";
+        }
 
         bookLeadingService.addBookLeading(bookLeading);
 
         return "redirect:/";
     }
 
+    @RequestMapping(value="{id}/deleteBookLeading", method= RequestMethod.GET)
+    public String deleteBookLeading(@PathVariable long id){
+        bookLeadingService.delete(id);
+
+        return "redirect:/";
+    }
 
 }

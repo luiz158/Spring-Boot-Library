@@ -3,9 +3,13 @@
 <div layout:fragment="content">
     <form method="post" name="comment_form" id="comment_form" action="/book/createBook" role="form">
         <div class="form-group">
-            Name_Book<input  name="nameBook" />
-            Author <input name="author"/>
-            Publishing_House <input name="publishingHouse"/>
+
+
+            Name_Book: <input  name="bookName"/>  <br/><br/>
+            Author:    <input name="author" /> <br/><br/>
+            Publishing_House: <input name="publishingHouse"/>
+
+
         </div>
         <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>

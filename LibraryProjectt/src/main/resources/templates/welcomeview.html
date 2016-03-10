@@ -100,6 +100,14 @@
             <td th:text="${bookLeading.reader.fullName}"></td>
             <td th:text="${bookLeading.dateTook}"></td>
             <td th:text="${bookLeading.dateBack}"></td>
+
+            <td>
+                <a th:href="@{'/{id}/deleteBookLeading'(id=${bookLeading.id})}" class="delete" th:attr="name=${bookLeading}">
+                        <span class="fa-stack">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </span>
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
