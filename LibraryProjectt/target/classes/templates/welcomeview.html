@@ -87,19 +87,19 @@
         <thead>
         <tr>
         <th>#</th>
-        <th>Book</th>
-        <th>Reader</th>
+        <th>Book_Name</th>
+        <th>Reader_Full_Name</th>
         <th>Date_Took</th>
         <th>Date_Back</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="bookLeading : ${bookLeadings}">
-            <td th:text="bookLeading.id"></td>
-            <td th:text="bookLeading.book"></td>
-            <td th:text="bookLeading.reader"></td>
-            <td th:text="bookLeading.dateTook"></td>
-            <td th:text="bookLeading.dateBack"></td>
+        <tr th:each="bookLeading : ${bookLeadings}" >
+           <td th:text="${bookLeading.id}"></td>
+            <td th:text="${bookLeading.book.nameBook}"></td>
+            <td th:text="${bookLeading.reader.fullName}"></td>
+            <td th:text="${bookLeading.dateTook}"></td>
+            <td th:text="${bookLeading.dateBack}"></td>
         </tr>
         </tbody>
     </table>

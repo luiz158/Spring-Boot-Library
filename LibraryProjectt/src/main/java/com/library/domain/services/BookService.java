@@ -12,4 +12,5 @@ public interface BookService {
     Book findOne(long id);
     Book editBook(Book book);
     List<Book> getAll();
+
 }

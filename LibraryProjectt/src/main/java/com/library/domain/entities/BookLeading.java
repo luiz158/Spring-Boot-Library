@@ -7,24 +7,25 @@ import java.util.Date;
 @Entity
 public class BookLeading {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @OneToOne
-    @JoinColumn(name="Book_Id")
+    @OneToOne(optional = false)
+    @JoinColumn(name = "book_id", unique = true, nullable = false, updatable = false)
     private Book book;
 
-    @OneToOne
-    @JoinColumn(name="Reader_Id")
+    @OneToOne(optional = false)
+    @JoinColumn(name = "reader_id", unique = true, nullable = false, updatable = false)
     private Reader reader;
 
-    @Column(name="Date_Took")
+    @Column(name = "Date_Took")
     private Date dateTook;
 
-    @Column(name="Date_Back")
+    @Column(name = "Date_Back")
     private Date dateBack;
 
-    public BookLeading(){
+    public BookLeading() {
 
     }
 

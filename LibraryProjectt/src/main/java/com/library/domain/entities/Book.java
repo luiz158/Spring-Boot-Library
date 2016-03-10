@@ -5,25 +5,28 @@ import javax.persistence.*;
 @Entity
 public class Book {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+ @Id
+ @GeneratedValue(strategy = GenerationType.AUTO)
+ private long id;
 
 
- @Column(name="name_book")
-    private String nameBook;
+ @Column(name = "name_book")
+ private String nameBook;
 
- @Column(name="author")
-    private String author;
+ @Column(name = "author")
+ private String author;
 
- @Column(name="publishing_house")
-    private String publishingHouse;
+ @Column(name = "publishing_house")
+ private String publishingHouse;
 
-public Book(){
+ @OneToOne(optional = false,mappedBy = "book")
+ private BookLeading bookLeading;
 
-}
+ public Book() {
 
- public Book(String author){
+ }
+
+ public Book(String author) {
   this.author = author;
  }
 
@@ -53,5 +56,13 @@ public Book(){
 
  public void setPublishingHouse(String publishingHouse) {
   this.publishingHouse = publishingHouse;
+ }
+
+ public BookLeading getBookLeading() {
+  return bookLeading;
+ }
+
+ public void setBookLeading(BookLeading bookLeading) {
+  this.bookLeading = bookLeading;
  }
 }
