@@ -12,13 +12,11 @@ public class Reader {
     private long id;
 
     @Column(name = "full_name")
-    @NotNull(message = "field should be filled in")
-    @Size(min=3,max=15, message = "size of field should be between 3 and 15 characters")
+    @Size(min=4,max=30, message = "size of field must be between 3 and 15 characters")
     private String fullName;
 
     @Column(name = "has_book")
-    @NotNull(message = "field should be filled in")
-    @Size(min=3,max=15, message = "size of field should be between 3 and 15 characters")
+    @Size(min=3,max=15, message = "size of field must be between 3 and 15 characters")
     private String hasBook;
 
     @OneToOne(optional = false,mappedBy = "reader")

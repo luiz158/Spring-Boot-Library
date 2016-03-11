@@ -1,7 +1,6 @@
 package com.library.domain.entities;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -13,18 +12,15 @@ public class Book {
 
 
  @Column(name = "name_book")
- @NotNull(message = "field should be filled in")
- @Size(min=3,max=15, message = "size of field should be between 3 and 15 characters")
+ @Size(min=3,max=15,message = "Size of field must be between 3 and 15")
  private String nameBook;
 
  @Column(name = "author")
- @NotNull(message = "field should be filled in")
- @Size(min=3,max=15,message = "size of field should be between 3 and 15 characters")
+ @Size(min=3,max=15,message = "Size of field must be between 3 and 15")
  private String author;
 
  @Column(name = "publishing_house")
- @NotNull(message = "field should be filled in")
- @Size(min=3,max=15,message = "size of field should be between 3 and 15 characters")
+ @Size(min=3,max=15,message = "Size of field must be between 3 and 15")
  private String publishingHouse;
 
  @OneToOne(optional = false,mappedBy = "book")

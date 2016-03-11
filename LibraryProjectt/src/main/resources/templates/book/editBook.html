@@ -1,13 +1,32 @@
-<html layout:decorator="layout">
+<html layout:decorator="layout" xmlns:th="http://www.thymeleaf.org">
 <div layout:fragment="content">
-    <form method="post" name="comment_form" id="comment_form" action="/book/updateBook" role="form">
-        <div class="form-group">
-            Name_Book<input  name="nameBook" /> <br/><br/>
-            Author <input name="author"/> <br/><br/>
-            Publishing_House <input name="publishingHouse"/>
-        </div>
-        <input type="hidden" id="id" rows="5" class="form-control" name="id" th:value="${book.id}"/>
-        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+    <form action="#" th:action="@{/book/updateBook}" th:object="${book}" method="post">
+        <table class="table table-striped">
+            <tr>
+                <td>Name_Book: </td>
+                <td><input type="text" th:field="*{nameBook}"/></td>
+
+
+            </tr>
+            <tr>
+                <td>Author: </td>
+                <td><input type="text" th:field="*{author}"/></td>
+
+
+            </tr>
+            <tr>
+                <td>Publishing_House: </td>
+                <td><input type="text" th:field="*{publishingHouse}"/></td>
+
+
+            </tr>
+            <input type="hidden" id="id" rows="5" class="form-control" name="id" th:value="${book.id}"/>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </table>
+
     </form>
+
+
 </div>
 </html>

@@ -2,7 +2,6 @@ package com.library.domain.entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.sql.Date;
 
 
@@ -15,20 +14,20 @@ public class BookLeading {
 
     @OneToOne(optional = false)
     @JoinColumn(name = "book_id", unique = true, nullable = false, updatable = false)
-    @NotNull(message = "field should be filled in")
+    @NotNull(message = "Wrong Book_Id")
     private Book book;
 
     @OneToOne(optional = false)
     @JoinColumn(name = "reader_id", unique = true, nullable = false, updatable = false)
-    @NotNull(message = "field should be filled in")
+    @NotNull(message = "Wrong Reader_Id")
     private Reader reader;
 
     @Column(name = "Date_Took")
-    @NotNull(message = "field should be filled in")
+    @NotNull(message = "field must be filled in")
     private Date dateTook;
 
     @Column(name = "Date_Back")
-    @NotNull(message = "field should be filled in")
+   @NotNull(message = "field must be filled in")
     private Date dateBack;
 
     public BookLeading() {

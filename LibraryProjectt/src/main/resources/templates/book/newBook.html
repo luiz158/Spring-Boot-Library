@@ -1,17 +1,30 @@
 
-<html layout:decorator="layout">
+<html layout:decorator="layout"  xmlns:th="http://www.thymeleaf.org">
 <div layout:fragment="content">
-    <form method="post" name="comment_form" id="comment_form" action="/book/createBook" role="form">
-        <div class="form-group">
+   <form action="#" th:action="@{/book/createBook}" th:object="${book}" method="post">
+        <table class="table table-striped">
+            <tr>
+                <td>Name_Book: </td>
+                <td><input type="text" th:field="*{nameBook}"/></td>
+                <td th:if="${#fields.hasErrors('nameBook')}" th:errors="*{nameBook}">Name error</td>
 
+            </tr>
+            <tr>
+                <td>Author: </td>
+                <td><input type="text" th:field="*{author}"/></td>
+                <td th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Name error</td>
 
-            Name_Book: <input  name="bookName"/>  <br/><br/>
-            Author:    <input name="author" /> <br/><br/>
-            Publishing_House: <input name="publishingHouse"/>
+            </tr>
+            <tr>
+                <td>Publishing_House: </td>
+                <td><input type="text" th:field="*{publishingHouse}"/></td>
+                <td th:if="${#fields.hasErrors('publishingHouse')}" th:errors="*{publishingHouse}">Name error</td>
 
+            </tr>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </table>
 
-        </div>
-        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-    </form>
+       </form>
+
 </div>
 </html>
