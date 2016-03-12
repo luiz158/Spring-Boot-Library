@@ -2,48 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f575255a-b43b-4f2d-b017-81e028de6dda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/library/LibraryApplicationConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/library/LibraryApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/library/LibraryApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/library/aop/LibraryLogging.class" afterPath="$PROJECT_DIR$/target/classes/com/library/aop/LibraryLogging.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/LibraryApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/LibraryApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/aop/LibraryLogging.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/aop/LibraryLogging.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/controllers/LibraryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/controllers/LibraryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/Book.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/BookLeading.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/BookLeading.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/Reader.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/entities/Reader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/BookLeadingRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/BookLeadingRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/BookRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/BookRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/ReaderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/repositories/ReaderRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/services/BookLeadingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/services/BookLeadingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/services/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/services/BookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/services/ReaderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/services/ReaderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/services/impl/BookServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/services/impl/BookServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/library/domain/services/impl/ReaderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/library/domain/services/impl/ReaderServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/starter-template.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/starter-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/sticky-footer-navbar.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/sticky-footer-navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/book/editBook.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/editBook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/book/newBook.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/newBook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/bookLeading/newBookLeading.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/bookLeading/newBookLeading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/reader/editReader.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/reader/editReader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/reader/newReader.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/reader/newReader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/welcomeview.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/welcomeview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/library/LibraryApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/library/LibraryApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/starter-template.css" afterPath="$PROJECT_DIR$/target/classes/static/css/starter-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/sticky-footer-navbar.css" afterPath="$PROJECT_DIR$/target/classes/static/css/sticky-footer-navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/book/editBook.html" afterPath="$PROJECT_DIR$/target/classes/templates/book/editBook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/book/newBook.html" afterPath="$PROJECT_DIR$/target/classes/templates/book/newBook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/bookLeading/newBookLeading.html" afterPath="$PROJECT_DIR$/target/classes/templates/bookLeading/newBookLeading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/reader/editReader.html" afterPath="$PROJECT_DIR$/target/classes/templates/reader/editReader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/reader/newReader.html" afterPath="$PROJECT_DIR$/target/classes/templates/reader/newReader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/welcomeview.html" afterPath="$PROJECT_DIR$/target/classes/templates/welcomeview.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/LibraryApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/aop/LibraryLogging.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/controllers/LibraryController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/entities/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/entities/BookLeading.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/entities/Reader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/repositories/BookLeadingRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/repositories/BookRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/repositories/ReaderRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/BookLeadingService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/BookService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/ReaderService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/impl/BookLeadingServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/impl/BookServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/library/domain/services/impl/ReaderServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/css/starter-template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/css/sticky-footer-navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/book/editBook.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/book/newBook.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/bookLeading/newBookLeading.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/reader/editReader.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/reader/newReader.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/welcomeview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/library/LibraryApplicationTests.class" afterPath="" />
     </list>
     <ignored path="LibraryProjectt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -141,8 +125,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.38297874">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1018,12 +1002,12 @@
       <workItem from="1457722256544" duration="3322000" />
       <workItem from="1457729745431" duration="4304000" />
       <workItem from="1457744731445" duration="3300000" />
-      <workItem from="1457748688053" duration="49000" />
+      <workItem from="1457748688053" duration="98000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138699000" />
+    <option name="totallyTimeSpent" value="138748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1036,7 +1020,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3360" y="65" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1033,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18477103" sideWeight="0.49411765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18477103" sideWeight="0.49411765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23240939" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1520,8 +1504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.38297874">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
