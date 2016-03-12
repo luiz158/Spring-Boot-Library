@@ -8,6 +8,8 @@ import java.util.List;
 public interface BookLeadingService {
 
     BookLeading addBookLeading(BookLeading bookLeading);
+
     List<BookLeading> getAll();
+
     void delete(long id);
 }

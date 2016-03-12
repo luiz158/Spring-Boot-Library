@@ -27,7 +27,7 @@ public class BookLeading {
     private Date dateTook;
 
     @Column(name = "Date_Back")
-   @NotNull(message = "field must be filled in")
+    @NotNull(message = "field must be filled in")
     private Date dateBack;
 
     public BookLeading() {
@@ -42,28 +42,28 @@ public class BookLeading {
         return reader;
     }
 
+    public void setReader(Reader reader) {
+        this.reader = reader;
+    }
+
     public Book getBook() {
         return book;
-    }
-
-    public Date getDateTook() {
-        return dateTook;
-    }
-
-    public Date getDateBack() {
-        return dateBack;
     }
 
     public void setBook(Book book) {
         this.book = book;
     }
 
-    public void setReader(Reader reader) {
-        this.reader = reader;
+    public Date getDateTook() {
+        return dateTook;
     }
 
     public void setDateTook(Date dateTook) {
         this.dateTook = dateTook;
+    }
+
+    public Date getDateBack() {
+        return dateBack;
     }
 
     public void setDateBack(Date dateBack) {

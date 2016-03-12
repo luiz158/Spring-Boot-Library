@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml"
       layout:decorator="layout">
 
 
@@ -8,44 +8,44 @@
     <a class="btn btn-primary" href="/addNewBook">Add new book</a>
 
 
-<table class="table table-striped">
-    <thead>
+    <table class="table table-striped">
+        <thead>
 
-    <tr>
-       <th>#</th>
-        <th>Name_Book</th>
-        <th>Author</th>
-        <th>Publishing_House</th>
+        <tr>
+            <th>#</th>
+            <th>Name_Book</th>
+            <th>Author</th>
+            <th>Publishing_House</th>
 
-    </tr>
+        </tr>
 
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
 
-    <tr th:each="book : ${books}">
-        <td th:text="${book.id}"></td>
-        <td th:text="${book.nameBook}"></td>
-        <td th:text="${book.author}"></td>
-       <td th:text="${book.publishingHouse}"></td>
-        <td>
-            <a th:href="@{'/{id}/deleteBook'(id=${book.id})}" class="delete" th:attr="name=${book}">
+        <tr th:each="book : ${books}">
+            <td th:text="${book.id}"></td>
+            <td th:text="${book.nameBook}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.publishingHouse}"></td>
+            <td>
+                <a th:href="@{'/{id}/deleteBook'(id=${book.id})}" class="delete" th:attr="name=${book}">
                         <span class="fa-stack">
                             <i class="glyphicon glyphicon-trash"></i>
                         </span>
-            </a>
-        </td>
-        <td>
-            <a th:href="@{'/{id}/editBook'(id=${book.id})}" class="edit" th:attr="name=${book}">
+                </a>
+            </td>
+            <td>
+                <a th:href="@{'/{id}/editBook'(id=${book.id})}" class="edit" th:attr="name=${book}">
                     <span class="fa-stack">
                         <i class="glyphicon glyphicon-edit"></i>
                     </span>
 
-            </a>
-        </td>
-    </tr>
+                </a>
+            </td>
+        </tr>
 
-    </tbody>
-</table>
+        </tbody>
+    </table>
     <a class="btn btn-primary" href="/addNewReader">Add new reader</a>
     <table class="table table-striped">
         <thead>
@@ -86,23 +86,24 @@
     <table class="table table-striped">
         <thead>
         <tr>
-        <th>#</th>
-        <th>Book_Name</th>
-        <th>Reader_Full_Name</th>
-        <th>Date_Took</th>
-        <th>Date_Back</th>
+            <th>#</th>
+            <th>Book_Name</th>
+            <th>Reader_Full_Name</th>
+            <th>Date_Took</th>
+            <th>Date_Back</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="bookLeading : ${bookLeadings}" >
-           <td th:text="${bookLeading.id}"></td>
+        <tr th:each="bookLeading : ${bookLeadings}">
+            <td th:text="${bookLeading.id}"></td>
             <td th:text="${bookLeading.book.nameBook}"></td>
             <td th:text="${bookLeading.reader.fullName}"></td>
             <td th:text="${bookLeading.dateTook}"></td>
             <td th:text="${bookLeading.dateBack}"></td>
 
             <td>
-                <a th:href="@{'/{id}/deleteBookLeading'(id=${bookLeading.id})}" class="delete" th:attr="name=${bookLeading}">
+                <a th:href="@{'/{id}/deleteBookLeading'(id=${bookLeading.id})}" class="delete"
+                   th:attr="name=${bookLeading}">
                         <span class="fa-stack">
                             <i class="glyphicon glyphicon-trash"></i>
                         </span>

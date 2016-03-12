@@ -1,16 +1,16 @@
-<html layout:decorator="layout" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
 <div layout:fragment="content">
 
     <form action="#" th:action="@{/reader/createReader}" th:object="${reader}" method="post">
         <table class="table table-striped">
             <tr>
-                <td>Full_Name: </td>
+                <td>Full_Name:</td>
                 <td><input type="text" th:field="*{fullName}"/></td>
                 <td th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}">Name error</td>
 
             </tr>
             <tr>
-                <td>Has_Book: </td>
+                <td>Has_Book:</td>
                 <td><input type="text" th:field="*{hasBook}"/></td>
                 <td th:if="${#fields.hasErrors('hasBook')}" th:errors="*{hasBook}">Name error</td>
 

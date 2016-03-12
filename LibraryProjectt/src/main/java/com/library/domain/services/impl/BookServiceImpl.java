@@ -18,14 +18,14 @@ public class BookServiceImpl implements BookService {
     private BookRepository bookRepository;
 
 
-    @Override
-    public Book addBook(Book book) {
-        Book saveBook =  bookRepository.saveAndFlush(book);
-        return saveBook;
+    public BookServiceImpl() {
+
     }
 
-    public BookServiceImpl(){
-
+    @Override
+    public Book addBook(Book book) {
+        Book saveBook = bookRepository.saveAndFlush(book);
+        return saveBook;
     }
 
     @Override
@@ -35,14 +35,14 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book editBook(Book book) {
-       Book editBook = bookRepository.saveAndFlush(book);
+        Book editBook = bookRepository.saveAndFlush(book);
 
         return editBook;
     }
 
     @Override
     public List<Book> getAll() {
-        return  bookRepository.findAll();
+        return bookRepository.findAll();
     }
 
     @Override

@@ -1,22 +1,22 @@
-<html layout:decorator="layout" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
 <div layout:fragment="content">
 
     <form action="#" th:action="@{/book/updateBook}" th:object="${book}" method="post">
         <table class="table table-striped">
             <tr>
-                <td>Name_Book: </td>
+                <td>Name_Book:</td>
                 <td><input type="text" th:field="*{nameBook}"/></td>
 
 
             </tr>
             <tr>
-                <td>Author: </td>
+                <td>Author:</td>
                 <td><input type="text" th:field="*{author}"/></td>
 
 
             </tr>
             <tr>
-                <td>Publishing_House: </td>
+                <td>Publishing_House:</td>
                 <td><input type="text" th:field="*{publishingHouse}"/></td>
 
 
