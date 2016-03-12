@@ -1,12 +1,12 @@
 package com.library.controllers;
 
 
-import com.library.domain.entities.Book;
-import com.library.domain.entities.BookLeading;
-import com.library.domain.entities.Reader;
-import com.library.domain.services.impl.BookLeadingServiceImpl;
-import com.library.domain.services.impl.BookServiceImpl;
-import com.library.domain.services.impl.ReaderServiceImpl;
+import com.library.domain.Book;
+import com.library.domain.BookLeading;
+import com.library.domain.Reader;
+import com.library.services.BookLeadingService;
+import com.library.services.BookService;
+import com.library.services.ReaderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -24,16 +24,16 @@ import java.util.List;
 public class LibraryController {
 
     @Autowired
-    @Qualifier("bookServiceImpl")
-    private BookServiceImpl bookService;
+    @Qualifier("bookService")
+    private BookService bookService;
 
     @Autowired
-    @Qualifier("readerServiceImpl")
-    private ReaderServiceImpl readerService;
+    @Qualifier("readerService")
+    private ReaderService readerService;
 
     @Autowired
-    @Qualifier("bookLeadingServiceImpl")
-    private BookLeadingServiceImpl bookLeadingService;
+    @Qualifier("bookLeadingService")
+    private BookLeadingService bookLeadingService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String welcomeView(Model model) {

@@ -1,4 +1,4 @@
-package com.library.domain.entities;
+package com.library.domain;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
