@@ -10,7 +10,6 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-
     @Column(name = "name_book")
     @Size(min = 3, max = 15, message = "Size of field must be between 3 and 15")
     private String nameBook;
@@ -27,7 +26,6 @@ public class Book {
     private BookLeading bookLeading;
 
     public Book() {
-
     }
 
     public Book(String author) {
@@ -44,6 +42,10 @@ public class Book {
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getAuthor() {
